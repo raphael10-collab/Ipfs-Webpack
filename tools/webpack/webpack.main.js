@@ -18,4 +18,8 @@ module.exports = {
     //alias: require('./webpack.aliases'),
     modules: ['node_modules', 'src']
   },
+  resolveLoader: {
+    modules: ['node_modules'],
+    mainFields: ['loader', 'main'],
+  },
 };
